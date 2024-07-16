@@ -1,0 +1,5 @@
+brew "pre-commit"
+brew "tfsec"
+brew "terraform-docs"
+brew "tflint"
+brew "aws-sam-cli"
