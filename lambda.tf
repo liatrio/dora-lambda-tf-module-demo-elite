@@ -92,7 +92,7 @@ resource "aws_lambda_function" "test_hello_lambda" {
   role             = aws_iam_role.lambda_role.arn
   handler          = local.binary_name
   memory_size      = 128
-  runtime          = "go1.x"
+  runtime          = "provided.al2023"
   vpc_config {
     subnet_ids         = [aws_subnet.lambda_pvt_subnet.id]
     security_group_ids = [aws_security_group.lambda_sg.id]
