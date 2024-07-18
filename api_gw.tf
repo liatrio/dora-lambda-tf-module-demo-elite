@@ -1,5 +1,5 @@
 resource "aws_api_gateway_rest_api" "api_gw" {
-  name        = var.app_name
+  name        = "${var.app_name}-api-gw"
   description = "API Gw Endpoint for ${var.app_name}"
 }
 
