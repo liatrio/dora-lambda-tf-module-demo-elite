@@ -20,7 +20,7 @@ type APIGatewayProxyResponse struct {
 }
 
 func HandleRequest(ctx context.Context) (*APIGatewayProxyResponse, error) {
-	resp := &MyResponse{Timestamp: fmt.Sprintf("%d", time.Now().Unix())}
+	resp := &MyResponse{Timestamp: fmt.Sprintf("Hello World, the time is %d", time.Now().Unix())}
 	body, _ := json.Marshal(resp)
 	return &APIGatewayProxyResponse{
 		StatusCode: 200,
